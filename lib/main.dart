@@ -8,6 +8,7 @@ import 'package:english_words/english_words.dart';//영단어 관련 오픈 패�
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -41,7 +42,7 @@ class RandomWordsState extends State<RandomWords> {
 
   /// @see https://flutter-ko.dev/docs/get-started/codelab
   /// 함수는 단어 쌍 마다 한 번 씩 _buildRow()를 호출합니다.
-  /// 이 함수는 ListTile에서 각각 새로운 쌍을 표시하여 다음 단계에서 행을 더 매력적으로 만들 수 있게 합니다.
+  /// 이 함수는 ListTile 에서 각각 새로운 쌍을 표시하여 다음 단계에서 행을 더 매력적으로 만들 수 있게 합니다.
   Widget _buildSuggestions() {
     return ListView.builder(
         padding: const EdgeInsets.all(16.0),
@@ -67,6 +68,7 @@ class RandomWordsState extends State<RandomWords> {
 
 //RandomWords 위젯은 상태 클래스를 만드는 것 이외에 별다른 일을 하지 않습니다:
 class RandomWords extends StatefulWidget {
+
   @override
   RandomWordsState createState() => RandomWordsState();
 }
